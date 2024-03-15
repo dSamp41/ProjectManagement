@@ -1,6 +1,6 @@
 services:
   app:
-    build: .
+    build: app
     depends_on:
       db:
         condition: service_healthy
@@ -9,8 +9,11 @@ services:
   db:
     image: postgres:16.2-alpine
     restart: always
+    user: root
     environment:
-      POSTGRES_PASSWORD: example
+      PGUSER: postgres
+      POSTGRES_PASSWORD: a1s2d3f4
+      POSTGRES_DB: main_db
     healthcheck:
       test: ["CMD-SHELL", "pg_isready"]
       interval: 1s
