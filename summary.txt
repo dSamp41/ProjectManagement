@@ -1,3 +1,5 @@
+POSTGRES_PASSWORD=a1s2d3f4
+
 tabelle:
 
 Manager_ID | Project_ID
