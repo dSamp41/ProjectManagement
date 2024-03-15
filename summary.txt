@@ -1,0 +1,5 @@
+tabelle:
+
+Manager_ID | Project_ID
+Manager_ID | Name | Salary
+Project_ID | Project_Budget | Project_Location
