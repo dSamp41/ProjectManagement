@@ -19,6 +19,8 @@ services:
       interval: 1s
       timeout: 5s
       retries: 10
+    ports:
+      - 5432:5432
  
   adminer:
     image: adminer:4.8.1
